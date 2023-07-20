@@ -1,0 +1,10 @@
+*{
+    margin: 0px;
+    padding: 0PX;
+    box-sizing: border-box;
+}
+body{
+    font-size: 10px;
+    font-weight: 900;
+    background-color: bisque;
+}

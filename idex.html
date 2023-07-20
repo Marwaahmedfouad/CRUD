@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <div class="d-flex flex-column">
+      <div class="container py-3 m-auto w-75">
+        <label for="userId">UserID</label>
+        <input id="userId" type="text" class="form-control my-2" />
+        <label for="userName">UserName</label>
+        <input id="userName" type="text" class="form-control my-2" />
+        <label for="userAddress">UserAddress</label>
+        <input id="userAddress" type="text" class="form-control my-2" />
+        <label for="userphone">Userphone</label>
+        <input id="userphone" type="text" class="form-control my-2" />
+        <label for="userMobile">UserMobile</label>
+        <input id="userMobile" type="text" class="form-control my-2" />
+        <label for="useremail">UserEmail</label>
+        <input id="useremail" type="email" class="form-control my-2" />
+        <label for="complain">Complain</label>
+        <textarea id="complain" cols="25" rows="5" class="form-control">
+        </textarea>
+        <br>
+        <div class="text-center">
+          <button type="button" id="Addbtn" class="btn btn-primary d-block m-auto"  onclick="addData()" > Add Complain </button>
+          <button type="button" id="updatebtn" class="btn btn-primary d-none  m-auto" > Update Complain </button>
+
+        </div>
+      </div>
+  
+      <table class="table table-hover w-50 m-auto">
+        <thead>
+          <tr>
+            <th>UserID</th>
+            <th>UserName</th>
+            <th>UserAddress</th>
+            <th>Userphone</th>
+            <th>UserMobile</th>
+            <th>Complain</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="demo" class="">
+          <div class="d-flex py-3">
+            <input type="text" id="serach" placeholder="Seach by Username ....." class="form-control w-75 m-auto" oninput="searchItem(this.value)"/>
+          </div>
+        </tbody>
+      </table>
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
